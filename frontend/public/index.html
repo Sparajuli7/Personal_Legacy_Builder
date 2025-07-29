@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="AI-Driven Personal Legacy Builder - Create meaningful digital stories with AI-powered storytelling, multimedia outputs, and cultural sensitivity."
+    />
+    <meta name="keywords" content="legacy, storytelling, AI, family history, digital preservation, cultural heritage" />
+    <meta name="author" content="Personal Legacy Builder" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://legacy-builder.vercel.app/" />
+    <meta property="og:title" content="Personal Legacy Builder" />
+    <meta property="og:description" content="Create meaningful digital stories with AI-powered storytelling" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://legacy-builder.vercel.app/" />
+    <meta property="twitter:title" content="Personal Legacy Builder" />
+    <meta property="twitter:description" content="Create meaningful digital stories with AI-powered storytelling" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Accessibility -->
+    <meta name="robots" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- PWA -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Security headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
+    <title>Personal Legacy Builder - AI-Driven Storytelling</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        z-index: 9999;
+      ">
+        <div>
+          <h1 style="color: #2563eb; margin-bottom: 20px;">Personal Legacy Builder</h1>
+          <p>You need to enable JavaScript to run this application.</p>
+          <p style="font-size: 14px; margin-top: 20px; color: #666;">
+            This app uses modern web technologies to create AI-powered legacy stories.
+          </p>
+        </div>
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html> 

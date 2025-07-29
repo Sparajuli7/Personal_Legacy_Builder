@@ -1,0 +1,59 @@
+{
+  "short_name": "Legacy Builder",
+  "name": "AI-Driven Personal Legacy Builder",
+  "description": "Create meaningful digital stories with AI-powered storytelling, multimedia outputs, and cultural sensitivity.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "productivity", "education"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Create Story",
+      "short_name": "Story",
+      "description": "Start creating your legacy story",
+      "url": "/?action=create",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "View Stories",
+      "short_name": "Stories",
+      "description": "View your saved legacy stories",
+      "url": "/?action=stories",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+} 
