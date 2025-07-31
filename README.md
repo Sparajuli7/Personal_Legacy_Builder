@@ -1,6 +1,8 @@
 # AI-Driven Personal Legacy Builder
 
-A comprehensive web application that creates meaningful digital stories using AI-powered storytelling, multimedia outputs, and cultural sensitivity. Built for preserving family legacies with modern technology.
+The Personal Legacy Builder is a JavaScript-based project designed to help individuals create, organize, and preserve their personal stories, achievements, and memories for future generations. By offering tools to document and manage important milestones, this repository empowers users to easily build a meaningful digital legacy. Whether you want to record life events, share your experiences, or ensure your values and lessons are passed on, Personal Legacy Builder provides a flexible and user-friendly platform for capturing what matters most
+
+
 
 ## 🚀 Features
 
